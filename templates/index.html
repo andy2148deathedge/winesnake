@@ -3,15 +3,24 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wine Snake</title>
+  <title>Title</title>
 </head>
 
 <body>
-  <H3>wine snake</H3>
-  <form action="/result" method="get">
-    圖片來源(本機):<input type="text" name="picroute">
+  <h1>Wine Snake</h1>
+  <h3>檔案上傳搜尋</h3>
+  <form action="/" enctype='multipart/form-data' method='POST'>
+    <input type="file" name=file>
+    <input type="submit" value="上傳">
+  </form>
+
+  <button>
+    <a href="/resultFile">搜尋結果</a></button>
+  <hr>
+  <h3>檔案關鍵字搜尋</h3>
+  <P>請輸入酒品關鍵字(ex: Macallan 12 Sherry):</P>
+  <form action="/resultKeyword" method="get">
+    圖片來源(本機):<input type="text" name="keyword">
     <button>搜尋</button>
   </form>
 

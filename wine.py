@@ -205,10 +205,12 @@ def find(house, age=[], ch=[]):
     wineInfo = wine_soup.select('body > div.outerWrap.b-box > div:nth-child(2) > div.mainArea.ins > div > div:nth-child(2) > div > div.col-sm-7 > div.text-left > div:nth-child(8)')
     wineInfo = wineInfo[0].get_text()
     
+    winepage = url
+    
     # print(wineName) # 酒支英文名
     # print(wineInfo) # wineInfo為含有div+br標籤的整個html區塊
     
-    return targetName, wineName, targetPic, wineInfo
+    return targetName, wineName, targetPic, wineInfo, winepage
 
 
 

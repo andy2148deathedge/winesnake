@@ -30,7 +30,7 @@ a = (house, age, ch) = ocrInfo(winelabel)
 print(a)
 
 # 用 find() 函式引入特徵値結果爬蟲，並賦値給需要的變數，得到酒資訊
-b = (chname, enname, picurl, info) = find(house, age, ch)
+b = (chname, enname, picurl, info, pageurl) = find(house, age, ch)
 print(b) # in age = ['14'] is fine
 
 
